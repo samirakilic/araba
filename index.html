@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>araba</title>
+</head>
+
+<body>
+
+
+    <script>
+        function araba(marka, model, üretim_yili, renk) {
+            this.marka = marka;
+            this.model = model;
+            this.üretim_yili = üretim_yili;
+            this.renk = renk;
+        }
+
+        var hizArtir={
+            hiz:0,
+            yeni_hiz:function(){
+                this.hiz=100;
+            }
+        }
+
+        var hizArtir2={
+            hiz:0,
+            yeni_hiz:function(){
+                this.hiz=180;
+            }
+        }
+
+        var hizArtir3={
+            hiz:0,
+            yeni_hiz:function(){
+                this.hiz=120;
+            }
+        }
+
+
+
+        var yeniAraba = new araba('Ferrari', 'ferrari sf90 stradale', 2019, 'Kırmızı');
+        console.log(yeniAraba);
+        console.log("Araba Çalıştırıldı");
+        console.log(hizArtir.hiz);
+        console.log(hizArtir.yeni_hiz());
+        console.log(hizArtir.hiz);
+      
+
+        var yeniArabaa = new araba('Audi', 'Audi a6 c8', 2019, 'Siyah');
+        console.log(yeniArabaa);
+        console.log("Araba Çalıştırıldı");
+        console.log(hizArtir2.hiz);
+        console.log(hizArtir2.yeni_hiz());
+        console.log(hizArtir2.hiz);
+      
+
+        var yeniArabaaa = new araba('Range Rover', 'Range Rover Velar', 2023, 'Beyaz');
+        console.log(yeniArabaaa);
+        console.log("Araba Çalıştırıldı");
+        console.log(hizArtir3.hiz);
+        console.log(hizArtir3.yeni_hiz());
+        console.log(hizArtir3.hiz);
+      
+
+
+
+
+    </script>
+</body>
+
+</html>
